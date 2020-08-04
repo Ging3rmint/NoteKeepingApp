@@ -24,14 +24,14 @@ function App() {
   return (
     <div>
       <Header />
-      <CreateArea addFunc={addNote} />
+      <CreateArea onAdd={addNote} />
       {notes.map((note, index) => (
         <Note
           key={index}
           id={index}
           title={note.title}
           content={note.content}
-          deleteNote={deleteNote}
+          onDelete={deleteNote}
         />
       ))}
       <Footer />

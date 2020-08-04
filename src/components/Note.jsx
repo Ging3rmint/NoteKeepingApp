@@ -7,7 +7,7 @@ function Note(props) {
       <p>{props.content}</p>
       <button
         onClick={() => {
-          props.deleteNote(props.id);
+          props.onDelete(props.id);
         }}
       >
         DELETE

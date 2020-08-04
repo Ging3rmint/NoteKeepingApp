@@ -24,7 +24,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
+      <form className="create-note">
         <input
           onChange={handleChange}
           name="title"
@@ -38,12 +38,7 @@ function CreateArea(props) {
           rows="3"
           value={note.content}
         />
-        <button
-          type="button"
-          onClick={() => {
-            submitNote();
-          }}
-        >
+        <button type="button" onClick={submitNote}>
           Add
         </button>
       </form>
